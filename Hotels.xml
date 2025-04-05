@@ -1,30 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-	<xs:element name="Hotels">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name ="Hotel" maxOccurs="unbounded">
-					<!--First instance of Hotel-->
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="Name" type="xs:string"/>
-							<xs:element name="Phone" type="xs:string" maxOccurs="unbounded"/>
-							<xs:element name="Address"/>
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="Number" type="xs:int"/>
-									<xs:element name="Street" type="xs:string"/>
-									<xs:element name="City" type="xs:string"/>
-									<xs:element name="State" type="xs:string"/>
-									<xs:element name="Zip" type="xs:string"/>
-								</xs:sequence>
-								<xs:attribute name="NearstAirport" type="xs:string" use="required"/> <!--Might need to change to Nearest don't get points-->
-							</xs:complexType>
-						</xs:sequence>
-						<xs:attribute name="Rating" type="xs:decimal" use="optional"/>
-					</xs:complexType>
-				</xs:element>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
-</xs:schema>
+<Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Hotels.xsd">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address>
+			<Number>11</Number>
+			<Street>E. 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
+		<Name>Tempe Mission Palms</Name>
+		<Phone>(480) 894-1400</Phone>
+		<Address>
+			<Number>60</Number>
+			<Street>E. 5th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="3.9">
+		<Name>Wyndham Phoenix Airport/Tempe</Name>
+		<Phone>480-967-6600</Phone>
+		<Address>
+			<Number>1600</Number>
+			<Street>S. 52nd St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
+		<Name>Canopy by Hilton Tempe Downtown</Name>
+		<Phone>480-968-6800</Phone>
+		<Address>
+			<Number>108</Number>
+			<Street>E. Univserity Dr</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.2">
+		<Name>Hampton Inn and Suites Phoenix Tempe</Name>
+		<Phone>480-941-3341</Phone>
+		<Address>
+			<Number>1415</Number>
+			<Street>N. Scottsdale Rd</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.6">
+		<Name>Drury Plaza Hotel Phoenix Tempe</Name>
+		<Phone>480-940-3700</Phone>
+		<Address>
+			<Number>1780</Number>
+			<Street>W. Ranch Rd</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85284</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
+		<Name>Omni Tempe Hotel At Asu</Name>
+		<Phone>602-794-8600</Phone>
+		<Address>
+			<Number>7</Number>
+			<Street>E.Unversity Dr</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
+		<Name>Hilton Garden Inn Phoenix/tempe Asu Area</Name>
+		<Phone>480-968-2180</Phone>
+		<Address>
+			<Number>86</Number>
+			<Street>S. Rockford Dr</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="3.8">
+		<Name>Extended Stay America - Phoenix - Airport - Tempe</Name>
+		<Phone>480-557-8880</Phone>
+		<Address>
+			<Number>2165</Number>
+			<Street>W 15th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
+		<Name>Marriott Phoenix Resort Tempe at The Buttes</Name>
+		<Phone>602-225-9000</Phone>
+		<Address>
+			<Number>2000</Number>
+			<Street>W Westcourt Way</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85282</Zip>
+		</Address>
+	</Hotel>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
+		<Name>Hilton Garden Inn Phoenix Tempe, University Research Park</Name>
+		<Phone>480-897-5100</Phone>
+		<Address>
+			<Number>7290</Number>
+			<Street>Price Road</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85283</Zip>
+		</Address>
+	</Hotel>
+</Hotels>
