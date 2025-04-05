@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.2</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.2">
 		<Name>Westin</Name>
 		<Phone>480-968-8885</Phone>
 		<Phone>800-937-8461</Phone>
@@ -16,9 +14,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.5</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
 		<Name>Tempe Mission Palms</Name>
 		<Phone>480-894-1400</Phone>
 		<Address>
@@ -30,9 +26,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>3.9</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="3.9">
 		<Name>Wyndham Phoenix Airport/Tempe</Name>
 		<Phone>480-967-6600</Phone>
 		<Address>
@@ -44,9 +38,8 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.3</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
+		
 		<Name>Canopy by Hilton Tempe Downtown</Name>
 		<Phone>480-968-6800</Phone>
 		<Address>
@@ -58,9 +51,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.2</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.2">
 		<Name>Hampton Inn and Suites Phoenix Tempe</Name>
 		<Phone>480-941-3341</Phone>
 		<Address>
@@ -72,9 +63,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.6</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.6">
 		<Name>Drury Plaza Hotel Phoenix Tempe</Name>
 		<Phone>480-940-3700</Phone>
 		<Address>
@@ -86,9 +75,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.5</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
 		<Name>Omni Tempe Hotel At Asu</Name>
 		<Phone>602-794-8600</Phone>
 		<Address>
@@ -100,9 +87,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.5</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
 		<Name>Hilton Garden Inn Phoenix/tempe Asu Area</Name>
 		<Phone>480-968-2180</Phone>
 		<Address>
@@ -114,9 +99,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>3.8</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="3.8">
 		<Name>Extended Stay America - Phoenix - Airport - Tempe</Name>
 		<Phone>480-557-8880</Phone>
 		<Address>
@@ -128,9 +111,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.3</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
 		<Name>Marriott Phoenix Resort Tempe at The Buttes</Name>
 		<Phone>602-225-9000</Phone>
 		<Address>
@@ -142,9 +123,7 @@
 		</Address>
 	</Hotel>
 
-	<Hotel>
-		<NearstAirport>Sky Harbor</NearstAirport>
-		<Rating>4.3</Rating>
+	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
 		<Name>Hilton Garden Inn Phoenix Tempe, University Research Park</Name>
 		<Phone>480-897-5100</Phone>
 		<Address>
