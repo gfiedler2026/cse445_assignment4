@@ -3,6 +3,7 @@ using System.Xml.Schema;
 using System.Xml;
 using Newtonsoft.Json;
 using System.IO;
+using System.Net;
 
 
 
@@ -45,13 +46,13 @@ namespace ConsoleApp1
             try
             {
                 string xmlStuff = new WebClient().DownloadString(xmlUrl);
-                string xsdStuff = new WebClient().DownloadString(xsdUrl); //create a new client for both things in from their respective URLs
+                string xsdStuff = new WebClient().DownloadString(xsdUrl); //create new clients that we will use to complete verification
 
-                XmlSchemaSet schema = XmlSchema.Read(xsdReader, null);
-                using (StringReader xsdReader = new StringReader(xsdStuff)) //create an XMl reader 
+                XmlSchemaSet schemaSet = new XmlSchemaSet();
+                using (StringReader xsdReader = new StringReader(xsdStuff))
                 {
-                    XmlSchema schema = XmlSchema.Read(xsdReader, null); 
-                    schemaSet.Add(schema); 
+                    XmlSchema schema = XmlSchema.Read(xsdReader, null);
+                    schemaSet.Add(schema);
                 }
 
                 XmlReaderSettings settings = new XmlReaderSettings();
@@ -59,12 +60,13 @@ namespace ConsoleApp1
                 settings.ValidationType = ValidationType.Schema;
                 settings.ValidationEventHandler += (sender, args) =>
                 {
-                    errorMessage = args.Message; 
-                }
+                    errorMessage = args.Message;
+                };
+
                 using (StringReader xmlReader = new StringReader(xmlStuff))
-                using (xmlReader reader = xmlReader.Create(xmlReader, settings))
+                using (XmlReader reader = XmlReader.Create(xmlReader, settings))
                 {
-                    while (reader.Reader()) { } //read through 
+                    while (reader.Read()) { } //read through 
                 }
             }
             catch(Exception ex)
@@ -79,9 +81,9 @@ namespace ConsoleApp1
             try
             {
                 string xmlContent = new WebClient().DownloadString(xmlUrl); //create new client to transform the list of hotels to formatted JSON
-                XmlDocument doc  new XmlDocument();
-                doc.LoadXml(xmlContent); //load the xml doc
-                string jsonText = JsonConvert.SeralizeXmlNode(doc, Newtonsoft.Json.Formatting.Indented); //seralize and format with indents 
+                XmlDocument doc = new XmlDocument();
+                doc.LoadXml(xmlContent); //load xml doc
+                string jsonText = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.Indented); //serialize and format
                 return jsonText; //return formatted JSON text flie
             }
             catch(Exception ex)
