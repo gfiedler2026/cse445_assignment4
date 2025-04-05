@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <!--Root eleemnt name is Hotel instead of Hotels-->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!--Root eleemnt name is Hotel instead of Hotels-->
 	<Hotel NearstAirport="Sky Harbor" Rating="4.2">
 		<Name>Westin</Name>
 		<Phone>480-968-8885</Phone>
@@ -34,7 +35,8 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-	<Hotel Rating="4.3"> <!--Required att. missing : NearstAirport-->
+	<Hotel Rating="4.3">
+		<!--Required att. missing : NearstAirport-->
 		<Name>Canopy by Hilton Tempe Downtown</Name>
 		<Phone>480-968-6800</Phone>
 		<Address>
@@ -110,10 +112,11 @@
 			<City>Tempe</City>
 			<State>AZ</State>
 			<Zip>85282</Zip>
-	</Hotel>
+		</Hotel>
 	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
 		<Name>Hilton Garden Inn Phoenix Tempe, University Research Park</Name>
-		<Name>Extended Stay America - Phoenix - Airport - Tempe</Name> <!--two names are provided for one of the hotels-->
+		<Name>Extended Stay America - Phoenix - Airport - Tempe</Name>
+		<!--two names are provided for one of the hotels-->
 		<Phone>480-897-5100</Phone>
 		<Address>
 			<Number>7290</Number>

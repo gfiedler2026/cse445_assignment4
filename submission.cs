@@ -72,7 +72,7 @@ namespace ConsoleApp1
                     while (reader.Read()) { } //read through 
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 errorMessage = ex.Message; //give error message if error messgae
             }
@@ -89,7 +89,7 @@ namespace ConsoleApp1
                 string jsonText = JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.Indented); //serialize and format
                 return jsonText; //return formatted JSON text flie
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return $"Error: {ex.Message}"; //return error message if need 
             }
