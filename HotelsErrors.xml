@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> <!--Root eleemnt name is Hotel instead of Hotels-->
-	<Hotel NeartAirport="Sky Harbor" Rating="4.2">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.2">
 		<Name>Westin</Name>
 		<Phone>480-968-8885</Phone>
 		<Phone>800-937-8461</Phone>
@@ -12,7 +12,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="4.5">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
 		<Name>Tempe Mission Palms</Name>
 		<Phone>480-894-1400</Phone>
 		<Address>
@@ -23,7 +23,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="3.9">
+	<Hotel NearstAirport="Sky Harbor" Rating="3.9">
 		<Name>Wyndham Phoenix Airport/Tempe</Name>
 		<Phone>480-967-6600</Phone>
 		<Address>
@@ -45,7 +45,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="4.2">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.2">
 		<Name>Hampton Inn and Suites Phoenix Tempe</Name>
 		<Phone>480-941-3341</Phone>
 		<Address>
@@ -56,7 +56,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="4.6">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.6">
 		<Name>Drury Plaza Hotel Phoenix Tempe</Name>
 		<Phone>480-940-3700</Phone>
 		<Address>
@@ -67,7 +67,7 @@
 			<Zip>85284</Zip>
 		</Address>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="4.5">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
 		<Name>Omni Tempe Hotel At Asu</Name>
 		<Phone>602-794-8600</Phone>
 		<Address>
@@ -78,7 +78,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="4.5">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.5">
 		<Name>Hilton Garden Inn Phoenix/tempe Asu Area</Name>
 		<!--Missing Phone element-->
 		<Address>
@@ -89,7 +89,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="3.8">
+	<Hotel NearstAirport="Sky Harbor" Rating="3.8">
 		<Name>Extended Stay America - Phoenix - Airport - Tempe</Name>
 		<Phone>480-557-8880</Phone>
 		<Address>
@@ -100,7 +100,7 @@
 			<Zip>85281</Zip>
 		</Address>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="4.3">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
 		<Name>Marriott Phoenix Resort Tempe at The Buttes</Name>
 		<Phone>602-225-9000</Phone>
 		<Address>
@@ -111,7 +111,7 @@
 			<State>AZ</State>
 			<Zip>85282</Zip>
 	</Hotel>
-	<Hotel NeartAirport="Sky Harbor" Rating="4.3">
+	<Hotel NearstAirport="Sky Harbor" Rating="4.3">
 		<Name>Hilton Garden Inn Phoenix Tempe, University Research Park</Name>
 		<Name>Extended Stay America - Phoenix - Airport - Tempe</Name> <!--two names are provided for one of the hotels-->
 		<Phone>480-897-5100</Phone>
