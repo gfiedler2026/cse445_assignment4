@@ -19,9 +19,9 @@ namespace ConsoleApp1
 
     public class Program
     {
-        public static string xmlURL = "https://github.com/gfiedler2026/cse445_assignment4/blob/main/Hotels.xml";
-        public static string xmlErrorURL = "https://github.com/gfiedler2026/cse445_assignment4/blob/main/HotelsErrors.xml";
-        public static string xsdURL = "https://github.com/gfiedler2026/cse445_assignment4/blob/main/Hotels.xsd";
+        public static string xmlURL = "https://gfiedler2026.github.io/cse445_assignment4/Hotels.xml";
+        public static string xmlErrorURL = "https://gfiedler2026.github.io/cse445_assignment4/HotelsErrors.xml";
+        public static string xsdURL = "https://gfiedler2026.github.io/cse445_assignment4/Hotels.xsd";
 
         public static void Main(string[] args)
         {
@@ -45,13 +45,13 @@ namespace ConsoleApp1
             try
             {
                 string xmlStuff = new WebClient().DownloadString(xmlUrl);
-                string xsdStuff = new WebClient().DownloadString(xsdUrl);
+                string xsdStuff = new WebClient().DownloadString(xsdUrl); //create a new client for both things in from their respective URLs
 
                 XmlSchemaSet schema = XmlSchema.Read(xsdReader, null);
-                using (StringReader xsdReader = new StringReader(xsdStuff))
+                using (StringReader xsdReader = new StringReader(xsdStuff)) //create an XMl reader 
                 {
-                    XmlSchema schema = XmlSchema.Read(xsdReader, null);
-                    schemaSet.Add(schema);
+                    XmlSchema schema = XmlSchema.Read(xsdReader, null); 
+                    schemaSet.Add(schema); 
                 }
 
                 XmlReaderSettings settings = new XmlReaderSettings();
@@ -64,29 +64,29 @@ namespace ConsoleApp1
                 using (StringReader xmlReader = new StringReader(xmlStuff))
                 using (xmlReader reader = xmlReader.Create(xmlReader, settings))
                 {
-                    while (reader.Reader()) { }
+                    while (reader.Reader()) { } //read through 
                 }
             }
             catch(Exception ex)
             {
-                errorMessage = ex.Message;
+                errorMessage = ex.Message; //give error message if error messgae
             }
-            return errorMessage;
+            return errorMessage; //return No Error
         }
 
         public static string Xml2Json(string xmlUrl)
         {
             try
             {
-                string xmlContent = new WebClient().DownloadString(xmlUrl);
+                string xmlContent = new WebClient().DownloadString(xmlUrl); //create new client to transform the list of hotels to formatted JSON
                 XmlDocument doc  new XmlDocument();
-                doc.LoadXml(xmlContent);
-                string jsonText = JsonConvert.SeralizeXmlNode(doc, Newtonsoft.Json.Formatting.Indented);
-                return jsonText;
+                doc.LoadXml(xmlContent); //load the xml doc
+                string jsonText = JsonConvert.SeralizeXmlNode(doc, Newtonsoft.Json.Formatting.Indented); //seralize and format with indents 
+                return jsonText; //return formatted JSON text flie
             }
             catch(Exception ex)
             {
-                return $"Error: {ex.Message}";
+                return $"Error: {ex.Message}"; //return error message if need 
             }
 
             // The returned jsonText needs to be de-serializable by Newtonsoft.Json package. (JsonConvert.DeserializeXmlNode(jsonText))
