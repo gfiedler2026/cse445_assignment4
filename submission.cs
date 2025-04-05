@@ -81,8 +81,8 @@ namespace ConsoleApp1
                 string xmlContent = new WebClient().DownloadString(xmlUrl);
                 XmlDocument doc  new XmlDocument();
                 doc.LoadXml(xmlContent);
-                string json = JsonConvert.SeralizeXmlNode(doc, Newtonsoft.Json.Formatting.Indented);
-                return json;
+                string jsonText = JsonConvert.SeralizeXmlNode(doc, Newtonsoft.Json.Formatting.Indented);
+                return jsonText;
             }
             catch(Exception ex)
             {
