@@ -14,7 +14,7 @@
 	</Hotel>
 	<Hotel NeartAirport="Sky Harbor" Rating="4.5">
 		<Name>Tempe Mission Palms</Name>
-		<Phone>(480) 894-1400</Phone>
+		<Phone>480-894-1400</Phone>
 		<Address>
 			<Number>60</Number>
 			<Street>E. 5th St</Street>
